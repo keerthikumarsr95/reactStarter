@@ -1,8 +1,9 @@
 import { combineReducers } from 'redux';
-// import { reducer as formRedcer } from 'redux-form';
+import { reducer as formReducer } from 'redux-form';
 
 const appReducer = combineReducers({
   auth: () => ({ isLoggedIn: false }),
+  form: formReducer,
 });
 
 const rootReducer = (state, action) => {
